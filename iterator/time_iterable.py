@@ -1,4 +1,4 @@
-class TimeIterator:
+class TimeIterable:
     def __init__(self, start, stop):
         self._start = start
         self._stop = stop
@@ -17,7 +17,11 @@ class TimeIterator:
         return '{:02d}:{:02d}:{:02d}'.format(hour, minute, second)
 
 
-for i in TimeIterator(88234, 88237):
+for i in TimeIterable(88234, 88237):
     print(i)
 
-print(TimeIterator(88234, 88237)[2])
+print(TimeIterable(88234, 88237)[2])
+
+
+
+
