@@ -17,4 +17,3 @@ g = prime_number_generator(50, 100)
 print(type(g))
 for i in g:
     print(i)
-
